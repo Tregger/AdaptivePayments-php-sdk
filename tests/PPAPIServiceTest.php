@@ -1,7 +1,5 @@
 <?php
-require_once 'PHPUnit/Framework.php';
 
-require_once 'PPAPIService.php';
 
 /**
  * Test class for PPAPIService.
