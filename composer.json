@@ -1,0 +1,24 @@
+{
+    "name":"paypal/adaptive-payments",
+    "type":"library",
+    "description":"The Adaptive Payments API is a suite of payment services that allow merchants and developers to select the payment scenario most suitable to their needs.",
+    "keywords":["paypal"],
+    "license":["SDK"],
+    "authors":[
+        {
+            "name":"PayPal, Inc.",
+            "homepage":"https://www.x.com/developers/paypal/"
+        },
+        {
+            "name":"Community",
+            "homepage":"https://github.com/paypal/SDKs/graphs/contributors"
+        }
+    ],
+    "require":{
+        "php":">=5.2",
+        "ext-curl":"*",
+    },
+    "autoload":{
+        "classmap":["lib/"]
+    }
+}
