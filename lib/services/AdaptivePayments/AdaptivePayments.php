@@ -1,26 +1,26 @@
 <?php
  /**
-  * Stub objects for AdaptivePayments 
-  * Auto generated code 
-  * 
+  * Stub objects for AdaptivePayments
+  * Auto generated code
+  *
   */
 /**
- * 
+ *
  */
 class AccountIdentifier  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $email;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var PhoneNumberType
-	 */ 
+	 */
 	public $phone;
 
 
@@ -51,65 +51,65 @@ class AccountIdentifier  {
 				$this->phone = new PhoneNumberType();
 				$this->phone->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class BaseAddress  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $line1;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $line2;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $city;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $state;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $postalCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $countryCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $type;
 
 
@@ -145,73 +145,73 @@ class BaseAddress  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->type = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * Details about the end user of the application invoking this
- * service. 
+ * service.
  */
 class ClientDetailsType  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $ipAddress;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $deviceId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $applicationId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $model;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $geoLocation;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $customerType;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $partnerName;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $customerId;
 
 
@@ -254,27 +254,27 @@ class ClientDetailsType  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class CurrencyType  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $code;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $amount;
 
 	/**
@@ -311,74 +311,74 @@ class CurrencyType  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->amount = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * This type contains the detailed error information resulting
- * from the service operation. 
+ * from the service operation.
  */
 class ErrorData  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $errorId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $domain;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $subdomain;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ErrorSeverity
-	 */ 
+	 */
 	public $severity;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ErrorCategory
-	 */ 
+	 */
 	public $category;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $message;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $exceptionId;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorParameter
-	 */ 
+	 */
 	public $parameter;
 
 
@@ -425,30 +425,30 @@ class ErrorData  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class ErrorParameter  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $name;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $value;
 
 
@@ -464,32 +464,32 @@ class ErrorParameter  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->value = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * This specifies a fault, encapsulating error data, with
- * specific error codes. 
+ * specific error codes.
  */
 class FaultMessage  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -513,37 +513,37 @@ class FaultMessage  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class PhoneNumberType  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $countryCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $phoneNumber;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $extension;
 
 	/**
@@ -588,16 +588,16 @@ class PhoneNumberType  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->extension = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * This specifies the list of parameters with every request to
- * the service. 
+ * the service.
  */
 class RequestEnvelope  {
 
@@ -606,18 +606,18 @@ class RequestEnvelope  {
 	 * client application pertaining to a particular data component
 	 * (e.g., Item, Transaction, etc.). The detail level is
 	 * specified in the DetailLevelCodeType which has all the
-	 * enumerated values of the detail level for each component. 
+	 * enumerated values of the detail level for each component.
 	 *@access public
 	 *@var DetailLevelCode
-	 */ 
+	 */
 	public $detailLevel;
 
 	/**
 	 * This should be the standard RFC 3066 language identification
-	 * tag, e.g., en_US. 
+	 * tag, e.g., en_US.
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $errorLanguage;
 
 	/**
@@ -643,42 +643,42 @@ class RequestEnvelope  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * This specifies a list of parameters with every response from
- * a service. 
+ * a service.
  */
 class ResponseEnvelope  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var dateTime
-	 */ 
+	 */
 	public $timestamp;
 
 	/**
-	 * Application level acknowledgment code. 
+	 * Application level acknowledgment code.
 	 *@access public
 	 *@var AckCode
-	 */ 
+	 */
 	public $ack;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $correlationId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $build;
 
 
@@ -702,37 +702,37 @@ class ResponseEnvelope  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->build = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class Address  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $addresseeName;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var BaseAddress
-	 */ 
+	 */
 	public $baseAddress;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $addressId;
 
 
@@ -753,24 +753,24 @@ class Address  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->addressId = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class AddressList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var Address
-	 */ 
+	 */
 	public $address;
 
 
@@ -789,24 +789,24 @@ class AddressList  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * A list of ISO currency codes. 
+ * A list of ISO currency codes.
  */
 class CurrencyCodeList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $currencyCode;
 
 	/**
@@ -828,28 +828,28 @@ class CurrencyCodeList  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * A list of estimated currency conversions for a base
- * currency. 
+ * currency.
  */
 class CurrencyConversionList  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyType
-	 */ 
+	 */
 	public $baseAmount;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyList
-	 */ 
+	 */
 	public $currencyList;
 
 
@@ -867,25 +867,25 @@ class CurrencyConversionList  {
 				$this->currencyList = new CurrencyList();
 				$this->currencyList->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * A table that contains a list of estimated currency
- * conversions for a base currency in each row. 
+ * conversions for a base currency in each row.
  */
 class CurrencyConversionTable  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var CurrencyConversionList
-	 */ 
+	 */
 	public $currencyConversionList;
 
 
@@ -904,24 +904,24 @@ class CurrencyConversionTable  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * A list of ISO currencies. 
+ * A list of ISO currencies.
  */
 class CurrencyList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var CurrencyType
-	 */ 
+	 */
 	public $currency;
 
 	/**
@@ -957,45 +957,45 @@ class CurrencyList  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * Customizable options that a client application can specify
- * for display purposes. 
+ * for display purposes.
  */
 class DisplayOptions  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $emailHeaderImageUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $emailMarketingImageUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $headerImageUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $businessName;
 
 
@@ -1040,24 +1040,24 @@ class DisplayOptions  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->businessName = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class ErrorList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -1076,23 +1076,23 @@ class ErrorList  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class FundingConstraint  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var FundingTypeList
-	 */ 
+	 */
 	public $allowedFundingType;
 
 
@@ -1115,23 +1115,23 @@ class FundingConstraint  {
 				$this->allowedFundingType = new FundingTypeList();
 				$this->allowedFundingType->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * FundingTypeInfo represents one allowed funding type. 
+ * FundingTypeInfo represents one allowed funding type.
  */
 class FundingTypeInfo  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $fundingType;
 
 	/**
@@ -1159,24 +1159,24 @@ class FundingTypeInfo  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->fundingType = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class FundingTypeList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var FundingTypeInfo
-	 */ 
+	 */
 	public $fundingTypeInfo;
 
 	/**
@@ -1212,37 +1212,37 @@ class FundingTypeList  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * Describes the conversion between 2 currencies. 
+ * Describes the conversion between 2 currencies.
  */
 class CurrencyConversion  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyType
-	 */ 
+	 */
 	public $from;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyType
-	 */ 
+	 */
 	public $to;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $exchangeRate;
 
 
@@ -1264,51 +1264,51 @@ class CurrencyConversion  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->exchangeRate = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * Funding source information. 
+ * Funding source information.
  */
 class FundingSource  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $lastFourOfAccountNumber;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $type;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $displayName;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $fundingSourceId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $allowed;
 
 
@@ -1336,30 +1336,30 @@ class FundingSource  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->allowed = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * Amount to be charged to a particular funding source. 
+ * Amount to be charged to a particular funding source.
  */
 class FundingPlanCharge  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyType
-	 */ 
+	 */
 	public $charge;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var FundingSource
-	 */ 
+	 */
 	public $fundingSource;
 
 
@@ -1377,60 +1377,60 @@ class FundingPlanCharge  {
 				$this->fundingSource = new FundingSource();
 				$this->fundingSource->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * FundingPlan describes the funding sources to be used for a
- * specific payment. 
+ * specific payment.
  */
 class FundingPlan  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $fundingPlanId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyType
-	 */ 
+	 */
 	public $fundingAmount;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var FundingSource
-	 */ 
+	 */
 	public $backupFundingSource;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyType
-	 */ 
+	 */
 	public $senderFees;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyConversion
-	 */ 
+	 */
 	public $currencyConversion;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var FundingPlanCharge
-	 */ 
+	 */
 	public $charge;
 
 
@@ -1473,10 +1473,10 @@ class FundingPlan  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
@@ -1484,15 +1484,15 @@ class FundingPlan  {
  * Details about the party that initiated this payment. The API
  * user is making this payment on behalf of the initiator. The
  * initiator can simply be an institution or a customer of the
- * institution. 
+ * institution.
  */
 class InitiatingEntity  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var InstitutionCustomer
-	 */ 
+	 */
 	public $institutionCustomer;
 
 
@@ -1515,70 +1515,70 @@ class InitiatingEntity  {
 				$this->institutionCustomer = new InstitutionCustomer();
 				$this->institutionCustomer->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The customer of the initiating institution 
+ * The customer of the initiating institution
  */
 class InstitutionCustomer  {
 
 	/**
-	 * The unique identifier as assigned to the institution. 
+	 * The unique identifier as assigned to the institution.
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $institutionId;
 
 	/**
 	 * The first (given) name of the end consumer as known by the
-	 * institution. 
+	 * institution.
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $firstName;
 
 	/**
 	 * The last (family) name of the end consumer as known by the
-	 * institution. 
+	 * institution.
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $lastName;
 
 	/**
 	 * The full name of the end consumer as known by the
-	 * institution. 
+	 * institution.
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $displayName;
 
 	/**
 	 * The unique identifier as assigned to the end consumer by the
-	 * institution. 
+	 * institution.
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $institutionCustomerId;
 
 	/**
 	 * The two-character ISO country code of the home country of
-	 * the end consumer 
+	 * the end consumer
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $countryCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $email;
 
 	/**
@@ -1659,51 +1659,51 @@ class InstitutionCustomer  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->email = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * Describes an individual item for an invoice. 
+ * Describes an individual item for an invoice.
  */
 class InvoiceItem  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $name;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $identifier;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $price;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $itemPrice;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $itemCount;
 
 
@@ -1756,39 +1756,39 @@ class InvoiceItem  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->itemCount = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * Describes a payment for a particular receiver (merchant),
- * contains list of additional per item details. 
+ * contains list of additional per item details.
  */
 class InvoiceData  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var InvoiceItem
-	 */ 
+	 */
 	public $item;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $totalTax;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $totalShipping;
 
 
@@ -1833,31 +1833,31 @@ class InvoiceData  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->totalShipping = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * The error that resulted from an attempt to make a payment to
- * a receiver. 
+ * a receiver.
  */
 class PayError  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var Receiver
-	 */ 
+	 */
 	public $receiver;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -1875,24 +1875,24 @@ class PayError  {
 				$this->error = new ErrorData();
 				$this->error->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class PayErrorList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var PayError
-	 */ 
+	 */
 	public $payError;
 
 
@@ -1911,10 +1911,10 @@ class PayErrorList  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
@@ -1922,64 +1922,64 @@ class PayErrorList  {
  * PaymentInfo represents the payment attempt made to a
  * Receiver of a PayRequest. If the execution of the payment
  * has not yet completed, there will not be any transaction
- * details. 
+ * details.
  */
 class PaymentInfo  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $transactionId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $transactionStatus;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var Receiver
-	 */ 
+	 */
 	public $receiver;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $refundedAmount;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $pendingRefund;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $senderTransactionId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $senderTransactionStatus;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $pendingReason;
 
 
@@ -2020,24 +2020,24 @@ class PaymentInfo  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->pendingReason = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class PaymentInfoList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var PaymentInfo
-	 */ 
+	 */
 	public $paymentInfo;
 
 
@@ -2056,10 +2056,10 @@ class PaymentInfoList  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
@@ -2067,57 +2067,57 @@ class PaymentInfoList  {
  * Receiver is the party where funds are transferred to. A
  * primary receiver receives a payment directly from the sender
  * in a chained split payment. A primary receiver should not be
- * specified when making a single or parallel split payment. 
+ * specified when making a single or parallel split payment.
  */
 class Receiver  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $amount;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $email;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var PhoneNumberType
-	 */ 
+	 */
 	public $phone;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $primary;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $invoiceId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $paymentType;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $paymentSubType;
 
 	/**
@@ -2195,24 +2195,24 @@ class Receiver  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->paymentSubType = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class ReceiverList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var Receiver
-	 */ 
+	 */
 	public $receiver;
 
 	/**
@@ -2235,13 +2235,13 @@ class ReceiverList  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * The sender identifier type contains information to identify
- * a PayPal account. 
+ * a PayPal account.
  */
 class ReceiverIdentifier  extends AccountIdentifier  {
 
@@ -2256,52 +2256,52 @@ class ReceiverIdentifier  extends AccountIdentifier  {
 
 	public function init($map = null, $prefix = '') {
 		if($map != null) {
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * Options that apply to the receiver of a payment, allows
- * setting additional details for payment using invoice. 
+ * setting additional details for payment using invoice.
  */
 class ReceiverOptions  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $description;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $customId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var InvoiceData
-	 */ 
+	 */
 	public $invoiceData;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ReceiverIdentifier
-	 */ 
+	 */
 	public $receiver;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $referrerCode;
 
 	/**
@@ -2365,87 +2365,87 @@ class ReceiverOptions  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->referrerCode = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * RefundInfo represents the refund attempt made to a Receiver
- * of a PayRequest. 
+ * of a PayRequest.
  */
 class RefundInfo  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var Receiver
-	 */ 
+	 */
 	public $receiver;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $refundStatus;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $refundNetAmount;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $refundFeeAmount;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $refundGrossAmount;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $totalOfAllRefunds;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $refundHasBecomeFull;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $encryptedRefundTransactionId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $refundTransactionStatus;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ErrorList
-	 */ 
+	 */
 	public $errorList;
 
 
@@ -2495,24 +2495,24 @@ class RefundInfo  {
 				$this->errorList = new ErrorList();
 				$this->errorList->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class RefundInfoList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var RefundInfo
-	 */ 
+	 */
 	public $refundInfo;
 
 
@@ -2531,31 +2531,31 @@ class RefundInfoList  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * Options that apply to the sender of a payment. 
+ * Options that apply to the sender of a payment.
  */
 class SenderOptions  {
 
 	/**
 	 * Require the user to select a shipping address during the web
-	 * flow. 
+	 * flow.
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $requireShippingAddressSelection;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $referrerCode;
 
 
@@ -2584,31 +2584,31 @@ class SenderOptions  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->referrerCode = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * Details about the payer's tax info passed in by the merchant
- * or partner. 
+ * or partner.
  */
 class TaxIdDetails  {
 
 	/**
-	 * Tax id of the merchant/business. 
+	 * Tax id of the merchant/business.
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $taxId;
 
 	/**
-	 * Tax type of the Tax Id. 
+	 * Tax type of the Tax Id.
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $taxIdType;
 
 
@@ -2637,31 +2637,31 @@ class TaxIdDetails  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->taxIdType = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * The sender identifier type contains information to identify
- * a PayPal account. 
+ * a PayPal account.
  */
 class SenderIdentifier  extends AccountIdentifier  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $useCredentials;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var TaxIdDetails
-	 */ 
+	 */
 	public $taxIdDetails;
 
 
@@ -2693,30 +2693,30 @@ class SenderIdentifier  extends AccountIdentifier  {
 				$this->taxIdDetails = new TaxIdDetails();
 				$this->taxIdDetails->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class UserLimit  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $limitType;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyType
-	 */ 
+	 */
 	public $limitAmount;
 
 
@@ -2733,31 +2733,31 @@ class UserLimit  {
 				$this->limitAmount = new CurrencyType();
 				$this->limitAmount->init($map, $newPrefix);
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * This type contains the detailed warning information
- * resulting from the service operation. 
+ * resulting from the service operation.
  */
 class WarningData  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $warningId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $message;
 
 
@@ -2773,24 +2773,24 @@ class WarningData  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->message = $map[$mapKeyName];
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * 
+ *
  */
 class WarningDataList  {
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var WarningData
-	 */ 
+	 */
 	public $warningData;
 
 
@@ -2809,30 +2809,30 @@ class WarningDataList  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to cancel a Preapproval. 
+ * The request to cancel a Preapproval.
  */
 class CancelPreapprovalRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $preapprovalKey;
 
 	/**
@@ -2860,28 +2860,28 @@ class CancelPreapprovalRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * The result of the CancelPreapprovalRequest. 
+ * The result of the CancelPreapprovalRequest.
  */
 class CancelPreapprovalResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -2905,44 +2905,44 @@ class CancelPreapprovalResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to confirm a Preapproval. 
+ * The request to confirm a Preapproval.
  */
 class ConfirmPreapprovalRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $preapprovalKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $fundingSourceId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $pin;
 
 	/**
@@ -2978,28 +2978,28 @@ class ConfirmPreapprovalRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * The result of the ConfirmPreapprovalRequest. 
+ * The result of the ConfirmPreapprovalRequest.
  */
 class ConfirmPreapprovalResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -3023,53 +3023,53 @@ class ConfirmPreapprovalResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * A request to convert one or more currencies into their
- * estimated values in other currencies. 
+ * estimated values in other currencies.
  */
 class ConvertCurrencyRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyList
-	 */ 
+	 */
 	public $baseAmountList;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyCodeList
-	 */ 
+	 */
 	public $convertToCurrencyList;
 
 	/**
 	 * The two-character ISO country code where fx suppposed to
-	 * happen 
+	 * happen
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $countryCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $conversionType;
 
 	/**
@@ -3112,36 +3112,36 @@ class ConvertCurrencyRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * A response that contains a table of estimated converted
- * currencies based on the Convert Currency Request. 
+ * currencies based on the Convert Currency Request.
  */
 class ConvertCurrencyResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var CurrencyConversionTable
-	 */ 
+	 */
 	public $estimatedAmountTable;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -3170,44 +3170,44 @@ class ConvertCurrencyResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to execute the payment request. 
+ * The request to execute the payment request.
  */
 class ExecutePaymentRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $payKey;
 
 	/**
-	 * Describes the action that is performed by this API 
+	 * Describes the action that is performed by this API
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $actionType;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $fundingPlanId;
 
 	/**
@@ -3243,42 +3243,42 @@ class ExecutePaymentRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * The result of a payment execution. 
+ * The result of a payment execution.
  */
 class ExecutePaymentResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $paymentExecStatus;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var PayErrorList
-	 */ 
+	 */
 	public $payErrorList;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -3311,31 +3311,31 @@ class ExecutePaymentResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * The request to get the allowed funding sources available for
- * a preapproval. 
+ * a preapproval.
  */
 class GetAllowedFundingSourcesRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $key;
 
 	/**
@@ -3363,37 +3363,37 @@ class GetAllowedFundingSourcesRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * The response to get the backup funding sources available for
- * a preapproval. 
+ * a preapproval.
  */
 class GetAllowedFundingSourcesResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var FundingSource
-	 */ 
+	 */
 	public $fundingSource;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -3428,30 +3428,30 @@ class GetAllowedFundingSourcesResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to get the options of a payment request. 
+ * The request to get the options of a payment request.
  */
 class GetPaymentOptionsRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $payKey;
 
 	/**
@@ -3479,64 +3479,64 @@ class GetPaymentOptionsRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * The response message for the GetPaymentOption request 
+ * The response message for the GetPaymentOption request
  */
 class GetPaymentOptionsResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var InitiatingEntity
-	 */ 
+	 */
 	public $initiatingEntity;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var DisplayOptions
-	 */ 
+	 */
 	public $displayOptions;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $shippingAddressId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var SenderOptions
-	 */ 
+	 */
 	public $senderOptions;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ReceiverOptions
-	 */ 
+	 */
 	public $receiverOptions;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -3590,46 +3590,46 @@ class GetPaymentOptionsResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * The request to look up the details of a PayRequest. The
  * PaymentDetailsRequest can be made with either a payKey,
- * trackingId, or a transactionId of the PayRequest. 
+ * trackingId, or a transactionId of the PayRequest.
  */
 class PaymentDetailsRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $payKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $transactionId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $trackingId;
 
 	/**
@@ -3664,141 +3664,141 @@ class PaymentDetailsRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * The details of the PayRequest as specified in the Pay
- * operation. 
+ * operation.
  */
 class PaymentDetailsResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $cancelUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $currencyCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $ipnNotificationUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $memo;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var PaymentInfoList
-	 */ 
+	 */
 	public $paymentInfoList;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $returnUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $senderEmail;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $status;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $trackingId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $payKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $actionType;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $feesPayer;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $reverseAllParallelPaymentsOnError;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $preapprovalKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var FundingConstraint
-	 */ 
+	 */
 	public $fundingConstraint;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var SenderIdentifier
-	 */ 
+	 */
 	public $sender;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -3889,136 +3889,136 @@ class PaymentDetailsResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * The PayRequest contains the payment instructions to make
- * from sender to receivers. 
+ * from sender to receivers.
  */
 class PayRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ClientDetailsType
-	 */ 
+	 */
 	public $clientDetails;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $actionType;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $cancelUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $currencyCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $feesPayer;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $ipnNotificationUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $memo;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $pin;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $preapprovalKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ReceiverList
-	 */ 
+	 */
 	public $receiverList;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $reverseAllParallelPaymentsOnError;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $senderEmail;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $returnUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $trackingId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var FundingConstraint
-	 */ 
+	 */
 	public $fundingConstraint;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var SenderIdentifier
-	 */ 
+	 */
 	public $sender;
 
 	/**
@@ -4114,58 +4114,58 @@ class PayRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * The PayResponse contains the result of the Pay operation.
  * The payKey and execution status of the request should always
- * be provided. 
+ * be provided.
  */
 class PayResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $payKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $paymentExecStatus;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var PayErrorList
-	 */ 
+	 */
 	public $payErrorList;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var FundingPlan
-	 */ 
+	 */
 	public $defaultFundingPlan;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -4207,37 +4207,37 @@ class PayResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to look up the details of a Preapproval. 
+ * The request to look up the details of a Preapproval.
  */
 class PreapprovalDetailsRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $preapprovalKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $getBillingAddress;
 
 	/**
@@ -4269,204 +4269,204 @@ class PreapprovalDetailsRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * The details of the Preapproval as specified in the
- * Preapproval operation. 
+ * Preapproval operation.
  */
 class PreapprovalDetailsResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $approved;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $cancelUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $curPayments;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $curPaymentsAmount;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $curPeriodAttempts;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var dateTime
-	 */ 
+	 */
 	public $curPeriodEndingDate;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $currencyCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $dateOfMonth;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var DayOfWeek
-	 */ 
+	 */
 	public $dayOfWeek;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var dateTime
-	 */ 
+	 */
 	public $endingDate;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $maxAmountPerPayment;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $maxNumberOfPayments;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $maxNumberOfPaymentsPerPeriod;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $maxTotalAmountOfAllPayments;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $paymentPeriod;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $pinType;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $returnUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $senderEmail;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $memo;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var dateTime
-	 */ 
+	 */
 	public $startingDate;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $status;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $ipnNotificationUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var AddressList
-	 */ 
+	 */
 	public $addressList;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $feesPayer;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $displayMaxTotalAmount;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -4591,10 +4591,10 @@ class PreapprovalDetailsResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
@@ -4602,148 +4602,148 @@ class PreapprovalDetailsResponse  {
  * A request to create a Preapproval. A Preapproval is an
  * agreement between a Paypal account holder (the sender) and
  * the API caller (the service invoker) to make payment(s) on
- * the the sender's behalf with various limitations defined. 
+ * the the sender's behalf with various limitations defined.
  */
 class PreapprovalRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ClientDetailsType
-	 */ 
+	 */
 	public $clientDetails;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $cancelUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $currencyCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $dateOfMonth;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var DayOfWeek
-	 */ 
+	 */
 	public $dayOfWeek;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var dateTime
-	 */ 
+	 */
 	public $endingDate;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $maxAmountPerPayment;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $maxNumberOfPayments;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var integer
-	 */ 
+	 */
 	public $maxNumberOfPaymentsPerPeriod;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var double
-	 */ 
+	 */
 	public $maxTotalAmountOfAllPayments;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $paymentPeriod;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $returnUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $memo;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $ipnNotificationUrl;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $senderEmail;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var dateTime
-	 */ 
+	 */
 	public $startingDate;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $pinType;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $feesPayer;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var boolean
-	 */ 
+	 */
 	public $displayMaxTotalAmount;
 
 	/**
@@ -4847,35 +4847,35 @@ class PreapprovalRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * The result of the PreapprovalRequest is a preapprovalKey. 
+ * The result of the PreapprovalRequest is a preapprovalKey.
  */
 class PreapprovalResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $preapprovalKey;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -4903,10 +4903,10 @@ class PreapprovalResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
@@ -4914,50 +4914,50 @@ class PreapprovalResponse  {
  * A request to make a refund based on various criteria. A
  * refund can be made against the entire payKey, an individual
  * transaction belonging to a payKey, a tracking id, or a
- * specific receiver of a payKey. 
+ * specific receiver of a payKey.
  */
 class RefundRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $currencyCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $payKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $transactionId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $trackingId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ReceiverList
-	 */ 
+	 */
 	public $receiverList;
 
 	/**
@@ -5001,42 +5001,42 @@ class RefundRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * The result of a Refund request. 
+ * The result of a Refund request.
  */
 class RefundResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $currencyCode;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RefundInfoList
-	 */ 
+	 */
 	public $refundInfoList;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -5069,66 +5069,66 @@ class RefundResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to set the options of a payment request. 
+ * The request to set the options of a payment request.
  */
 class SetPaymentOptionsRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $payKey;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var InitiatingEntity
-	 */ 
+	 */
 	public $initiatingEntity;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var DisplayOptions
-	 */ 
+	 */
 	public $displayOptions;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $shippingAddressId;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var SenderOptions
-	 */ 
+	 */
 	public $senderOptions;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ReceiverOptions
-	 */ 
+	 */
 	public $receiverOptions;
 
 	/**
@@ -5180,28 +5180,28 @@ class SetPaymentOptionsRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * The response message for the SetPaymentOption request 
+ * The response message for the SetPaymentOption request
  */
 class SetPaymentOptionsResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -5225,31 +5225,31 @@ class SetPaymentOptionsResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
  * The request to get the funding plans available for a
- * payment. 
+ * payment.
  */
 class GetFundingPlansRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $payKey;
 
 	/**
@@ -5277,37 +5277,37 @@ class GetFundingPlansRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * The response to get the funding plans available for a
- * payment. 
+ * payment.
  */
 class GetFundingPlansResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var FundingPlan
-	 */ 
+	 */
 	public $fundingPlan;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -5342,32 +5342,32 @@ class GetFundingPlansResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to get the addresses available for a payment. 
+ * The request to get the addresses available for a payment.
  */
 class GetAvailableShippingAddressesRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
 	 * The key for which to provide the available addresses. Key
 	 * can be an AdaptivePayments key such as payKey or
-	 * preapprovalKey 
+	 * preapprovalKey
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $key;
 
 	/**
@@ -5395,37 +5395,37 @@ class GetAvailableShippingAddressesRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * The response to get the shipping addresses available for a
- * payment. 
+ * payment.
  */
 class GetAvailableShippingAddressesResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var Address
-	 */ 
+	 */
 	public $availableAddress;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -5460,32 +5460,32 @@ class GetAvailableShippingAddressesResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to get the addresses available for a payment. 
+ * The request to get the addresses available for a payment.
  */
 class GetShippingAddressesRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
 	 * The key for which to provide the available addresses. Key
 	 * can be an AdaptivePayments key such as payKey or
-	 * preapprovalKey 
+	 * preapprovalKey
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $key;
 
 	/**
@@ -5513,36 +5513,36 @@ class GetShippingAddressesRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
  * The response to get the shipping addresses available for a
- * payment. 
+ * payment.
  */
 class GetShippingAddressesResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var Address
-	 */ 
+	 */
 	public $selectedAddress;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -5571,52 +5571,52 @@ class GetShippingAddressesResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 /**
- * The request to get the remaining limits for a user 
+ * The request to get the remaining limits for a user
  */
 class GetUserLimitsRequest  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var RequestEnvelope
-	 */ 
+	 */
 	public $requestEnvelope;
 
 	/**
-	 * The account identifier for the user 
+	 * The account identifier for the user
 	 *@access public
 	 *@var AccountIdentifier
-	 */ 
+	 */
 	public $user;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $country;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $currencyCode;
 
 	/**
-	 * List of limit types 
+	 * List of limit types
      *@array
 	 *@access public
 	 *@var string
-	 */ 
+	 */
 	public $limitType;
 
 	/**
@@ -5660,43 +5660,43 @@ class GetUserLimitsRequest  {
 	}
 
 
-} 
+}
 
 
 
 /**
- * A response that contains a list of remaining limits 
+ * A response that contains a list of remaining limits
  */
 class GetUserLimitsResponse  {
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var ResponseEnvelope
-	 */ 
+	 */
 	public $responseEnvelope;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var UserLimit
-	 */ 
+	 */
 	public $userLimit;
 
 	/**
-	 * 
+	 *
 	 *@access public
 	 *@var WarningDataList
-	 */ 
+	 */
 	public $warningDataList;
 
 	/**
-	 * 
+	 *
      *@array
 	 *@access public
 	 *@var ErrorData
-	 */ 
+	 */
 	public $error;
 
 
@@ -5736,12 +5736,11 @@ class GetUserLimitsResponse  {
 				}
 				$i++;
 			}
-			
+
 		}
 	}
-} 
+}
 
 
 
 
-?>

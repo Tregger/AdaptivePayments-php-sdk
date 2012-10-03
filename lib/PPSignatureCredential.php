@@ -38,4 +38,4 @@ class PPSignatureCredential extends IPPCredential {
 		return $this->signature;
 	}
 }
-?>
+

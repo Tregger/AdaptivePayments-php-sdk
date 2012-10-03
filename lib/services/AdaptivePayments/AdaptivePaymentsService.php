@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once('PPBaseService.php');
 require_once('AdaptivePayments.php');
 require_once('PPUtils.php');
@@ -32,7 +32,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: ConfirmPreapproval
@@ -46,7 +46,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: ConvertCurrency
@@ -60,7 +60,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: ExecutePayment
@@ -74,7 +74,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetAllowedFundingSources
@@ -88,7 +88,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetPaymentOptions
@@ -102,7 +102,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: PaymentDetails
@@ -116,7 +116,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: Pay
@@ -130,7 +130,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: PreapprovalDetails
@@ -144,7 +144,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: Preapproval
@@ -158,7 +158,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: Refund
@@ -172,7 +172,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: SetPaymentOptions
@@ -186,7 +186,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetFundingPlans
@@ -200,7 +200,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetAvailableShippingAddresses
@@ -214,7 +214,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetShippingAddresses
@@ -228,7 +228,7 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetUserLimits
@@ -242,6 +242,5 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 }
-?>
