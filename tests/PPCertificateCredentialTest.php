@@ -103,4 +103,5 @@ class PPCertificateCredentialTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals('APP-80W284485P519543T', $this->object->getApplicationId());
 	}
 }
-?>
+
+

@@ -5,7 +5,7 @@ require_once 'PPLoggingManager.php';
 
 /**
  * Test class for PPLoggingManager.
- * 
+ *
  */
 class PPLoggingManagerTest extends PHPUnit_Framework_TestCase
 {
@@ -45,7 +45,7 @@ class PPLoggingManagerTest extends PHPUnit_Framework_TestCase
     public function testError()
     {
     	 $this->object->error('Test Error Message');
-       
+
     }
 
     /**
@@ -72,4 +72,5 @@ class PPLoggingManagerTest extends PHPUnit_Framework_TestCase
        $this->object->fine('Test fine Message');
     }
 }
-?>
+
+

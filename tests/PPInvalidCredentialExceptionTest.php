@@ -5,7 +5,7 @@ require_once 'exceptions/PPInvalidCredentialException.php';
 
 /**
  * Test class for PPInvalidCredentialException.
- * 
+ *
  */
 class PPInvalidCredentialExceptionTest extends PHPUnit_Framework_TestCase
 {
@@ -40,4 +40,5 @@ class PPInvalidCredentialExceptionTest extends PHPUnit_Framework_TestCase
       $this->assertContains('Error on line 23', $msg);
     }
 }
-?>
+
+

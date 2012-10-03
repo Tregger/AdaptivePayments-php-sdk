@@ -5,7 +5,7 @@ require_once 'PPConnectionManager.php';
 
 /**
  * Test class for PPConnectionManager.
- * 
+ *
  */
 class PPConnectionManagerTest extends PHPUnit_Framework_TestCase
 {
@@ -51,4 +51,5 @@ class PPConnectionManagerTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(get_class($conn), "PPHttpConnection");
     }
 }
-?>
+
+

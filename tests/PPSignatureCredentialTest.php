@@ -5,7 +5,7 @@ require_once 'PPSignatureCredential.php';
 
 /**
  * Test class for PPSignatureCredential.
- * 
+ *
  */
 class PPSignatureCredentialTest extends PHPUnit_Framework_TestCase
 {
@@ -95,7 +95,8 @@ class PPSignatureCredentialTest extends PHPUnit_Framework_TestCase
     {
     	$this->assertEquals('APP-80W284485P519543T', $this->object->getApplicationId());
     }
-    
-    
+
+
 }
-?>
+
+
