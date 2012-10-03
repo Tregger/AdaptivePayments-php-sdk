@@ -1,9 +1,5 @@
 <?php
- /**
-  * Stub objects for AdaptivePayments
-  * Auto generated code
-  *
-  */
+
 /**
  *
  */

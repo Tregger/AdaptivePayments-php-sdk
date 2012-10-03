@@ -1,7 +1,4 @@
 <?php
-require_once('PPBaseService.php');
-require_once('AdaptivePayments.php');
-require_once('PPUtils.php');
 
 
 /**
