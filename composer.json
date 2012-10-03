@@ -17,7 +17,8 @@
     "require":{
         "php":">=5.2",
         "ext-curl":"*",
-        "paypal/common":"self.version"
+        "paypal/common":"self.version",
+        "paypal/permissions":"self.version"
     },
     "autoload":{
         "classmap":["lib/"]
