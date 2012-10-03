@@ -3,7 +3,6 @@
  * PPConfigManager loads the SDK configuration file and
  * hands out appropriate config params to other classes
  */
-require_once 'exceptions/PPConfigurationException.php';
 
 class PPConfigManager {
 
@@ -55,7 +54,7 @@ class PPConfigManager {
 					$arr[$k] = $v;
 				}
 			}
-			
+
 			return $arr;
 		}
 
@@ -83,7 +82,7 @@ class PPConfigManager {
 			$iniPrefix = array_search($userId, $this->config);
 			$pos = strpos($iniPrefix, '.');
 			$acct = substr($iniPrefix, 0, $pos);
-			
+
 			return $acct;
 		}
 	}

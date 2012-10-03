@@ -1,14 +1,11 @@
 <?php
 
-require_once 'exceptions/PPMissingCredentialException.php';
-require_once 'IPPCredential.php';
-require_once 'PPConfigManager.php';
 
 /**
  * API signature based credentials
  */
 class PPSignatureCredential extends IPPCredential {
-	
+
 	/**
 	 * API Signature
 	 * @var string
@@ -16,13 +13,13 @@ class PPSignatureCredential extends IPPCredential {
 	private $signature;
 
 	public function __construct($userName, $password, $signature, $appId){
-		parent::__construct($userName, $password, $appId);		
+		parent::__construct($userName, $password, $appId);
 		$this->signature = $signature;
 		$this->validate();
 	}
-	
+
 	public function validate() {
-		
+
 		if ($this->userName == null || $this->userName == "") {
 			throw new PPMissingCredentialException("username cannot be empty");
 		}

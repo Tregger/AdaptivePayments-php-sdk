@@ -1,10 +1,4 @@
 <?php
-require_once 'PPCredentialManager.php';
-require_once 'PPConnectionManager.php';
-require_once 'PPObjectTransformer.php';
-require_once 'PPLoggingManager.php';
-require_once 'PPUtils.php';
-require_once 'PPAuthenticationManager.php';
 
 class PPAPIService
 {
@@ -28,7 +22,7 @@ class PPAPIService
 
 	public function makeRequest($apiMethod, $params, $apiUsername = null, $accessToken = null, $tokenSecret = null)
 	{
-		
+
 		$authentication = new PPAuthenticationManager();
 		$connectionMgr = PPConnectionManager::getInstance();
 		$connection = $connectionMgr->getConnection();
@@ -58,6 +52,6 @@ class PPAPIService
 		return $response;
 	}
 
-	
+
 
 }
