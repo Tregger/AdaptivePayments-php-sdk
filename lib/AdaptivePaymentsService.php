@@ -15,9 +15,13 @@ class AdaptivePaymentsService extends PPBaseService
 
 
 
-	public function __construct()
+	public function __construct(PPAPIService $api = NULL)
 	{
-		parent::__construct('AdaptivePayments');
+		if ($api === NULL) {
+			$api = new PPAPIService();
+		}
+
+		parent::__construct($api, 'AdaptivePayments');
 	}
 
 
