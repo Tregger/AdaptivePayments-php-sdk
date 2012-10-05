@@ -1,15 +1,12 @@
 <?php
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 define("DEFAULT_SELECT", "- Select -");
 
 $logger = new PPLoggingManager('PreApproval');
 
 // create request
 $requestEnvelope = new RequestEnvelope("en_US");
-$preapprovalRequest = new PreapprovalRequest($requestEnvelope, $_POST['cancelUrl'], 
+$preapprovalRequest = new PreapprovalRequest($requestEnvelope, $_POST['cancelUrl'],
 				$_POST['currencyCode'], $_POST['returnUrl'], $_POST['startingDate']);
 // Set optional params
 if($_POST['dateOfMonth'] != null) {
@@ -94,21 +91,21 @@ if($ack != "SUCCESS"){
 	?>
 		<div id="response_form">
 			<h3>Preapproval</h3>
-<?php 
+<?php
 	echo "<pre>";
 	print_r($response);
 	echo "</pre>";
-	
+
 	// Redirect to paypal.com here
 	$token = $response->preapprovalKey;
 	$payPalURL = 'https://www.sandbox.paypal.com/webscr&cmd=_ap-preapproval&preapprovalkey='.$token;
-	
+
 	echo "<table>";
 	echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
 	echo "<tr><td>PreapprovalKey :</td><td><div id='PreapprovalKey'>$token</div> </td></tr>";
 	echo "<tr><td><a href=$payPalURL><b>Redirect URL to Complete Preapproval Authorization</b></a></td></tr>";
 	echo "</table>";
-	require_once 'Common/Response.php';		
+	require_once 'Common/Response.php';
 ?>
 		</div>
 	</div>

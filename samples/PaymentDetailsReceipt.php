@@ -1,8 +1,5 @@
 <?php
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $logger = new PPLoggingManager('PaymentDetails');
 
@@ -54,7 +51,7 @@ if($ack != "SUCCESS"){
 ?>
 		<div id="response_form">
 			<h3>Payment Details</h3>
-<?php 
+<?php
 		echo "<table>";
 		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
 		echo "<tr><td>PayKey :</td><td><div id='PayKey'>$response->payKey</div> </td></tr>";
@@ -63,7 +60,7 @@ if($ack != "SUCCESS"){
 		echo "<pre>";
 		print_r($response);
 		echo "</pre>";
-		require_once 'Common/Response.php';	
+		require_once 'Common/Response.php';
 ?>
 		</div>
 	</div>

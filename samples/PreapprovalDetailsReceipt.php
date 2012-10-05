@@ -1,8 +1,5 @@
 <?php
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 define("DEFAULT_SELECT", "- Select -");
 
 $logger = new PPLoggingManager('PreApproval');
@@ -45,14 +42,14 @@ if($ack != "SUCCESS"){
 ?>
 		<div id="response_form">
 			<h3>Preapproval Details</h3>
-<?php 
+<?php
 	echo "<pre>";
 	print_r($response);
 	echo "</pre>";
 	echo "<table>";
 	echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
 	echo "</table>";
-	require_once 'Common/Response.php';	
+	require_once 'Common/Response.php';
 ?>
 		</div>
 	</div>

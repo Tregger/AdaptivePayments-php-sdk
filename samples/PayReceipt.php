@@ -6,10 +6,7 @@
  * user logs in to their PayPal account.
  * Called by Pay.php
  */
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 require_once('Common/Constants.php');
 
 define("DEFAULT_SELECT", "- Select -");
@@ -107,14 +104,14 @@ to begin to authorize payment.  If an error occured, show the
 resulting errors */
 
 $ack = strtoupper($response->responseEnvelope->ack);
-if($ack != "SUCCESS") {	
+if($ack != "SUCCESS") {
 	echo "<b>Error </b>";
 	echo "<pre>";
 	print_r($response);
 	echo "</pre>";
 	require_once 'Common/Response.php';
 	exit;
-} else {	
+} else {
 	$payKey = $response->payKey;
 	if(($response->paymentExecStatus == "COMPLETED" )) {
 		$case ="1";
@@ -125,7 +122,7 @@ if($ack != "SUCCESS") {
 	} else if(($_POST['actionType']== "PAY_PRIMARY")) {
 		$case ="4";
 	} else if(($_POST['actionType']== "CREATE") && ($response->paymentExecStatus == "CREATED" )) {
-		$apiCred = PPCredentialManager::getInstance()->getCredentialObject(null);		
+		$apiCred = PPCredentialManager::getInstance()->getCredentialObject(null);
 		if(str_replace('_api1.', '@', $apiCred->getUserName()) == $_POST["senderEmail"]) {
 			$case ="3";
 		} else {
@@ -146,13 +143,13 @@ if($ack != "SUCCESS") {
     </script>
 </head>
 
-<body>	
+<body>
 	<div id="wrapper">
 <?php
 	require_once 'Common/menu.html';
 ?>
 		<div id="response_form">
-			<h3>Pay - Response</h3>			
+			<h3>Pay - Response</h3>
 <?php
 $token = $response->payKey;
 $payPalURL = PAYPAL_REDIRECT_URL . '_ap-payment&paykey=' . $token;

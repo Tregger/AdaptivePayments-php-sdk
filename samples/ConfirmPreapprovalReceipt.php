@@ -1,8 +1,5 @@
 <?php
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $logger = new PPLoggingManager('ConfirmPreapproval');
 
@@ -52,7 +49,7 @@ if($ack != "SUCCESS"){
 ?>
 		<div id="response_form">
 			<h3>Confirm Preapproval</h3>
-<?php 
+<?php
    		echo "<pre>";
 		print_r($response);
 		echo "</pre>";

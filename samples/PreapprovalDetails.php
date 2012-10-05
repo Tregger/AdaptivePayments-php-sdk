@@ -1,8 +1,5 @@
 <?php
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $logger = new PPLoggingManager('PreapprovalDetails');
 
@@ -16,11 +13,11 @@ $logger = new PPLoggingManager('PreapprovalDetails');
 <script type="text/javascript" src="Common/jquery.qtip-1.0.0-rc3.min.js"></script>
 <script type="text/javascript">
 	toolTips = {
-	}	
+	}
 	$(document).ready( function () {
 		jQuery.each(toolTips, function(id, toolTip) {
 			$("#"+id).attr("title", toolTip);
-		}); 
+		});
 		$("input[title]").qtip(qtipConfig);
 		$("select[title]").qtip(qtipConfig);
 	});
@@ -33,7 +30,7 @@ $logger = new PPLoggingManager('PreapprovalDetails');
 			<h3>Preapproval Details</h3>
 			<div id="apidetails">A request to obtain information about an
 				agreement between you and a sender for making payments on the
-				sender’s behalf.</div>
+				senderï¿½s behalf.</div>
 		</div>
 		<div id="request_form">
 			<form method="POST" action="PreapprovalDetailsReceipt.php">

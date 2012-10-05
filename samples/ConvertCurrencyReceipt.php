@@ -1,8 +1,5 @@
 <?php
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $logger = new PPLoggingManager('ConvertCurrency');
 
@@ -63,7 +60,7 @@ require_once 'Common/menu.html';
 <div id="response_form">
 <h3>Convert Currency</h3>
 <?php
-		
+
 		echo "<table>";
 		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
 		echo "</table>";
